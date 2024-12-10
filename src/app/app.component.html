@@ -1,0 +1,8 @@
+<div class="header">
+  <h1>Gerenciador De Tarefas - Angular</h1>
+</div>
+
+<section class="task-container">
+  <app-task-input (taskAdded)="addTask($event)"></app-task-input>
+  <app-task-list [tasks]="tasks" (taskRemoved)="removeTask($event)"></app-task-list>
+</section>
